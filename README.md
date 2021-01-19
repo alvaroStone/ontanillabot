@@ -1,4 +1,4 @@
-# heroku-node-telegram-bot
+# ontanilla Bot
 Starter pack for running telegram bot on the Heroku using Node.js
 
 # Step-by-step
