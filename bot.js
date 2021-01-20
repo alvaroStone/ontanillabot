@@ -27,7 +27,7 @@ bot.onText(/^\/start/, function(msg){
                 "<b>/enlace</b>  :-) proporciono enlace al grupo de información en Telegram \n" + 
                 "<b>/padel</b>  :-) ¿Quieres jugar al pádel? Mira los horarios de reserva \n" + 
                 "<b>/prioridad</b>  :-) Listado de prioridades de pistas \n"  
-                , {parse_mode : "HTML"});
+                , {parse_mode : "HTML"}, );
 });
 
 bot.onText(/^\/enlace/, function(msg){
@@ -45,6 +45,13 @@ bot.onText(/^\/padel/, function(msg){
   "<b>Pista Izquierda:</b> \n" +
   "<a>https://calendar.google.com/calendar/u/0/embed?src=0fshvcdgfn6hjmf5mjinv26skk@group.calendar.google.com&ctz=Europe/Madrid&mode=WEEK</a>"
   , {parse_mode : "HTML"});
+  
+});
+
+bot.onText(/^\/prioridad/, function(msg){
+  var chatId = msg.chat.id;
+  var nameUser = msg.from.first_name;
+  bot.sendMessage(msg.chat.id, "<a>https://drive.google.com/file/d/1gweKEkq_KU_1ENErl-pJyv-rJKhizBSC/view?usp=sharing</a>", {parse_mode : "HTML"});
 });
 
 module.exports = bot;
