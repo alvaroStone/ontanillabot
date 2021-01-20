@@ -28,6 +28,7 @@ bot.onText(/^\/start/, function(msg){
                 "<b>/padel</b>  &#127934; ¿Quieres jugar al pádel? Mira los horarios de reserva \n" + 
                 "<b>/prioridad</b> &#128197; Listado de prioridades de pistas \n"  
                 , {parse_mode : "HTML"}, );
+  console.log (msg.from)
 });
 
 bot.onText(/^\/enlace/, function(msg){
