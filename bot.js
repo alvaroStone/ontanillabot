@@ -24,9 +24,9 @@ bot.onText(/^\/start/, function(msg){
   bot.sendMessage(msg.chat.id, 
                 "<b>Bienvenido al Bot de la Comunidad de Propietarios Ontanilla 2-42 (Madrid)</b> \n" + 
                 "<i>¿Qué Quieres Hacer?</i> \n " + 
-                "<b>/enlace</b>  :-) proporciono enlace al grupo de información en Telegram \n" + 
-                "<b>/padel</b>  :-) ¿Quieres jugar al pádel? Mira los horarios de reserva \n" + 
-                "<b>/prioridad</b>  :-) Listado de prioridades de pistas \n"  
+                "<b>/enlace</b> &#127381; proporciono enlace al grupo de información en Telegram \n" + 
+                "<b>/padel</b>  &#127934; ¿Quieres jugar al pádel? Mira los horarios de reserva \n" + 
+                "<b>/prioridad</b> &#128197; Listado de prioridades de pistas \n"  
                 , {parse_mode : "HTML"}, );
 });
 
@@ -45,7 +45,6 @@ bot.onText(/^\/padel/, function(msg){
   "<b>Pista Izquierda:</b> \n" +
   "<a>https://calendar.google.com/calendar/u/0/embed?src=0fshvcdgfn6hjmf5mjinv26skk@group.calendar.google.com&ctz=Europe/Madrid&mode=WEEK</a>"
   , {parse_mode : "HTML"});
-  
 });
 
 bot.onText(/^\/prioridad/, function(msg){
