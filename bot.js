@@ -1,4 +1,5 @@
 const token = process.env.TOKEN;
+const priority_url = process.env.PRIORITY_URL;
 
 const Bot = require('node-telegram-bot-api');
 let bot;
@@ -51,7 +52,7 @@ bot.onText(/^\/padel/, function(msg){
 bot.onText(/^\/prioridad/, function(msg){
   var chatId = msg.chat.id;
   var nameUser = msg.from.first_name;
-  bot.sendMessage(msg.chat.id, "<a>https://drive.google.com/file/d/1gweKEkq_KU_1ENErl-pJyv-rJKhizBSC/view?usp=sharing</a>", {parse_mode : "HTML"});
+  bot.sendMessage(msg.chat.id, "<a>" + priority_url + "</a>", {parse_mode : "HTML"});
 });
 
 module.exports = bot;
